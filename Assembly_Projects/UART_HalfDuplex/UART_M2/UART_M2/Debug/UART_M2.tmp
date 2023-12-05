@@ -1,0 +1,31 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega32"</DEVICE>
+ <WORKING_DIR>D:\Embeddedawy\UART_M2\UART_M2\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>D:/Amtel\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>D:\Amtel\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\Embeddedawy\UART_M2\UART_M2\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>D:/Amtel\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m32def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\Embeddedawy\UART_M2\UART_M2\Debug\UART_M2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>UART_M2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>UART_M2.map</FILE>
+  <FILE>UART_M2.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <init><FILE>D:\Embeddedawy\UART_M2\UART_M2\main.asm</FILE><LINE>11</LINE></init>
+  <MAIN><FILE>D:\Embeddedawy\UART_M2\UART_M2\main.asm</FILE><LINE>26</LINE></MAIN>
+  <READ><FILE>D:\Embeddedawy\UART_M2\UART_M2\main.asm</FILE><LINE>30</LINE></READ>
+  <DELAY><FILE>D:\Embeddedawy\UART_M2\UART_M2\main.asm</FILE><LINE>113</LINE></DELAY>
+  <LOOP><FILE>D:\Embeddedawy\UART_M2\UART_M2\main.asm</FILE><LINE>117</LINE></LOOP>
+ </LABELS>
+</ASSEMBLER_INFO>

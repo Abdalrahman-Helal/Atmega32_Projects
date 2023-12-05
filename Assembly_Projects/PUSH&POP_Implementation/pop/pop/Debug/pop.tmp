@@ -1,0 +1,29 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega32"</DEVICE>
+ <WORKING_DIR>D:\Embeddedawy\pop\pop\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>D:/Amtel\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>D:\Amtel\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\Embeddedawy\pop\pop\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>D:/Amtel\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m32def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\Embeddedawy\pop\pop\Debug\pop.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>pop.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>pop.map</FILE>
+  <FILE>pop.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <init><FILE>D:\Embeddedawy\pop\pop\main.asm</FILE><LINE>11</LINE></init>
+  <_PUSH><FILE>D:\Embeddedawy\pop\pop\main.asm</FILE><LINE>17</LINE></_PUSH>
+  <_POP><FILE>D:\Embeddedawy\pop\pop\main.asm</FILE><LINE>29</LINE></_POP>
+ </LABELS>
+</ASSEMBLER_INFO>
