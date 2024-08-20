@@ -1,0 +1,434 @@
+Archive member included because of file (symbol)
+
+x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./Src/EXTI_Program.o (__do_clear_bss)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./Src/App.o
+LOAD ./Src/DIO_Program.o
+LOAD ./Src/EXTI_Program.o
+LOAD ./Src/GI_Program.o
+LOAD ./Src/LED_Program.o
+LOAD x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xd3e
+ *(.vectors)
+ .vectors       0x00000000       0x54 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x10 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000060                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000070        0x8 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x00000078        0x4 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000078                __vector_12
+                0x00000078                __bad_interrupt
+                0x00000078                __vector_6
+                0x00000078                __vector_11
+                0x00000078                __vector_13
+                0x00000078                __vector_17
+                0x00000078                __vector_19
+                0x00000078                __vector_7
+                0x00000078                __vector_5
+                0x00000078                __vector_4
+                0x00000078                __vector_9
+                0x00000078                __vector_15
+                0x00000078                __vector_8
+                0x00000078                __vector_14
+                0x00000078                __vector_10
+                0x00000078                __vector_16
+                0x00000078                __vector_18
+                0x00000078                __vector_20
+ .text          0x0000007c        0x0 ./Src/App.o
+ .text          0x0000007c        0x0 ./Src/DIO_Program.o
+ .text          0x0000007c        0x0 ./Src/EXTI_Program.o
+ .text          0x0000007c        0x0 ./Src/GI_Program.o
+ .text          0x0000007c        0x0 ./Src/LED_Program.o
+ .text          0x0000007c        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x0000007c        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x0000007c                . = ALIGN (0x2)
+ *(.text.*)
+ .text.FUNC     0x0000007c       0x16 ./Src/App.o
+                0x0000007c                FUNC
+ .text.main     0x00000092       0x2c ./Src/App.o
+                0x00000092                main
+ .text.MDIO_voidSetPinDirection
+                0x000000be      0x246 ./Src/DIO_Program.o
+                0x000000be                MDIO_voidSetPinDirection
+ .text.MDIO_voidSetPinValue
+                0x00000304      0x246 ./Src/DIO_Program.o
+                0x00000304                MDIO_voidSetPinValue
+ .text.MDIO_getPinValue
+                0x0000054a      0x102 ./Src/DIO_Program.o
+                0x0000054a                MDIO_getPinValue
+ .text.MDIO_voidTogglePinValue
+                0x0000064c      0x10a ./Src/DIO_Program.o
+                0x0000064c                MDIO_voidTogglePinValue
+ .text.MDIO_voidSetPortDirection
+                0x00000756       0x88 ./Src/DIO_Program.o
+                0x00000756                MDIO_voidSetPortDirection
+ .text.MDIO_voidSetPortValue
+                0x000007de       0x88 ./Src/DIO_Program.o
+                0x000007de                MDIO_voidSetPortValue
+ .text.MDIO_voidInit
+                0x00000866       0x42 ./Src/DIO_Program.o
+                0x00000866                MDIO_voidInit
+ .text.MEXTI_voidConfig
+                0x000008a8       0xe8 ./Src/EXTI_Program.o
+                0x000008a8                MEXTI_voidConfig
+ .text.MEXTI_voidEnable
+                0x00000990       0x74 ./Src/EXTI_Program.o
+                0x00000990                MEXTI_voidEnable
+ .text.MEXTI_voidDisbale
+                0x00000a04       0x74 ./Src/EXTI_Program.o
+                0x00000a04                MEXTI_voidDisbale
+ .text.MEXTI_voidClearFlag
+                0x00000a78       0x74 ./Src/EXTI_Program.o
+                0x00000a78                MEXTI_voidClearFlag
+ .text.MEXTI_voidSetCallBack
+                0x00000aec       0x80 ./Src/EXTI_Program.o
+                0x00000aec                MEXTI_voidSetCallBack
+ .text.__vector_1
+                0x00000b6c       0x66 ./Src/EXTI_Program.o
+                0x00000b6c                __vector_1
+ .text.__vector_2
+                0x00000bd2       0x66 ./Src/EXTI_Program.o
+                0x00000bd2                __vector_2
+ .text.__vector_3
+                0x00000c38       0x66 ./Src/EXTI_Program.o
+                0x00000c38                __vector_3
+ .text.MGI_voidEnable
+                0x00000c9e       0x1c ./Src/GI_Program.o
+                0x00000c9e                MGI_voidEnable
+ .text.MGI_voidDisable
+                0x00000cba       0x1c ./Src/GI_Program.o
+                0x00000cba                MGI_voidDisable
+ .text.HLED_voidTurnLEDOn
+                0x00000cd6       0x22 ./Src/LED_Program.o
+                0x00000cd6                HLED_voidTurnLEDOn
+ .text.HLED_voidTurnLEDOff
+                0x00000cf8       0x22 ./Src/LED_Program.o
+                0x00000cf8                HLED_voidTurnLEDOff
+ .text.HLED_voidToggleLED
+                0x00000d1a       0x20 ./Src/LED_Program.o
+                0x00000d1a                HLED_voidToggleLED
+ .text.libgcc   0x00000d3a        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000d3a        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000d3a                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000d3a        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00000d3a                exit
+                0x00000d3a                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000d3a        0x4 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000d3e                _etext = .
+
+.data           0x00800060        0x0 load address 0x00000d3e
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./Src/App.o
+ .data          0x00800060        0x0 ./Src/DIO_Program.o
+ .data          0x00800060        0x0 ./Src/EXTI_Program.o
+ .data          0x00800060        0x0 ./Src/GI_Program.o
+ .data          0x00800060        0x0 ./Src/LED_Program.o
+ .data          0x00800060        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800060                . = ALIGN (0x2)
+                0x00800060                _edata = .
+                0x00800060                PROVIDE (__data_end, .)
+
+.bss            0x00800060        0x6
+                0x00800060                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800060        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800060        0x0 ./Src/App.o
+ .bss           0x00800060        0x0 ./Src/DIO_Program.o
+ .bss           0x00800060        0x0 ./Src/EXTI_Program.o
+ .bss           0x00800060        0x0 ./Src/GI_Program.o
+ .bss           0x00800060        0x0 ./Src/LED_Program.o
+ .bss           0x00800060        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800060        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ .bss.EXTI0_Callback
+                0x00800060        0x2 ./Src/EXTI_Program.o
+                0x00800060                EXTI0_Callback
+ .bss.EXTI1_Callback
+                0x00800062        0x2 ./Src/EXTI_Program.o
+                0x00800062                EXTI1_Callback
+ .bss.EXTI2_Callback
+                0x00800064        0x2 ./Src/EXTI_Program.o
+                0x00800064                EXTI2_Callback
+ *(COMMON)
+                0x00800066                PROVIDE (__bss_end, .)
+                0x00000d3e                __data_load_start = LOADADDR (.data)
+                0x00000d3e                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800066        0x0
+                0x00800066                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800066                PROVIDE (__noinit_end, .)
+                0x00800066                _end = .
+                0x00800066                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x1134
+ *(.stab)
+ .stab          0x00000000      0x468 ./Src/App.o
+ .stab          0x00000468      0x594 ./Src/DIO_Program.o
+                                0x690 (size before relaxing)
+ .stab          0x000009fc      0x42c ./Src/EXTI_Program.o
+                                0x4f8 (size before relaxing)
+ .stab          0x00000e28      0x144 ./Src/GI_Program.o
+                                0x1d4 (size before relaxing)
+ .stab          0x00000f6c      0x1c8 ./Src/LED_Program.o
+                                0x2c4 (size before relaxing)
+
+.stabstr        0x00000000      0xc98
+ *(.stabstr)
+ .stabstr       0x00000000      0xc98 ./Src/App.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(EXTI.elf elf32-avr)
+LOAD linker stubs
