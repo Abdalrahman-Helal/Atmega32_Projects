@@ -9,6 +9,7 @@ C_SRCS += \
 ../Src/DIO_Program.c \
 ../Src/EXTI_Program.c \
 ../Src/GI_Program.c \
+../Src/LCD_Program.c \
 ../Src/LED_Program.c 
 
 OBJS += \
@@ -17,6 +18,7 @@ OBJS += \
 ./Src/DIO_Program.o \
 ./Src/EXTI_Program.o \
 ./Src/GI_Program.o \
+./Src/LCD_Program.o \
 ./Src/LED_Program.o 
 
 C_DEPS += \
@@ -25,6 +27,7 @@ C_DEPS += \
 ./Src/DIO_Program.d \
 ./Src/EXTI_Program.d \
 ./Src/GI_Program.d \
+./Src/LCD_Program.d \
 ./Src/LED_Program.d 
 
 
