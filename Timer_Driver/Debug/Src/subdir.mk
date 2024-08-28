@@ -6,26 +6,32 @@
 C_SRCS += \
 ../Src/App.c \
 ../Src/DIO_Program.c \
+../Src/EXTI_Program.c \
 ../Src/GI_Program.c \
 ../Src/LCD_Program.c \
 ../Src/LED_Program.c \
-../Src/Timer_Program.c 
+../Src/Timer_Program.c \
+../Src/WDT_Program.c 
 
 OBJS += \
 ./Src/App.o \
 ./Src/DIO_Program.o \
+./Src/EXTI_Program.o \
 ./Src/GI_Program.o \
 ./Src/LCD_Program.o \
 ./Src/LED_Program.o \
-./Src/Timer_Program.o 
+./Src/Timer_Program.o \
+./Src/WDT_Program.o 
 
 C_DEPS += \
 ./Src/App.d \
 ./Src/DIO_Program.d \
+./Src/EXTI_Program.d \
 ./Src/GI_Program.d \
 ./Src/LCD_Program.d \
 ./Src/LED_Program.d \
-./Src/Timer_Program.d 
+./Src/Timer_Program.d \
+./Src/WDT_Program.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

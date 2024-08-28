@@ -140,7 +140,7 @@ void MTIMER1_voidInit(void)
 	OCR1A = 1000;
 
 	// Start Timer by setting its CLK
-	TCCR1B |= 0b000000100;
+	TCCR1B |= 0b000000010;
 }
 
 void MTIMER1_voidSetOCR1AValue(u16 A_u16value)
@@ -148,6 +148,20 @@ void MTIMER1_voidSetOCR1AValue(u16 A_u16value)
 	OCR1A = A_u16value;
 }
 
-//void MTIMER1_void
+void MTIMER1_voidICUSWInit(void)
+{
+	// Start Timer by setting its CLK
+	TCCR1B |= 0b000000010;
+}
+
+void MTIMER1_voidSetTimerValue(u16 A_u16Value)
+{
+	TCNT1= A_u16Value;
+}
+u16 MTIMER1_u16ReadTimer1Value(void)
+{
+	return TCNT1;
+}
+
 
 

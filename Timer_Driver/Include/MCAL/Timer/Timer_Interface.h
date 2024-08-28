@@ -23,6 +23,10 @@ void MTIMER0_voidSetOCR0Value(u8 A_u8OCR0Value);
 void MTIMER0_voidStopTimer (void);
 void MTIMER1_voidInit(void);
 void MTIMER1_voidSetOCR1AValue(u16 A_u16value);
+void MTIMER1_voidICUSWInit(void);
+void MTIMER1_voidSetTimerValue(u16 A_u16Value);
+u16 MTIMER1_u16ReadTimer1Value(void);
+
 
 
 
