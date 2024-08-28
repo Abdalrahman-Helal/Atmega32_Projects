@@ -33,7 +33,7 @@ void MTIMER0_voidInit(void)
 	TCCR0 |= TIMER0_CLK;
 
 #elif TIMER0_MODE == CTC_MODE
-	// Set Waveform in Normal Mode
+	// Set Waveform in CTC  Mode
 	CLR_BIT(TCCR0 , WGM00);
 	SET_BIT(TCCR0 , WGM01);
 
@@ -48,7 +48,26 @@ void MTIMER0_voidInit(void)
 	TCCR0 &= TIMER0_CLK_OCR_MASK;
 	TCCR0 |= TIMER0_CLK  | (OC0_MODE << 4);
 
-#elif TIMER0_MODE == PHASE_CORRECT_MODE
+#elif TIMER0_MODE == FAST_PWM_MODE
+	// Set Waveform in Fast PWM Mode
+	SET_BIT(TCCR0 , WGM00);
+	SET_BIT(TCCR0 , WGM01);
+
+	// Disable All Timer0 Interrupts
+	CLR_BIT(TIMSK, TOIE0);
+	CLR_BIT(TIMSK,OCIE0);
+
+	// Set OCR0 Value
+	OCR0 = OCR0_VALUE;
+
+	// Set OCR0 Configuration
+	TCCR0 &= TIMER0_CLK_OCR_MASK;
+	TCCR0 |= TIMER0_CLK  | (OC0_MODE << 4);
+	//Start Timer by Setting CLK
+
+	// Enable Compare Output Mode , Fast PWM Mode in (Inverting Mode)
+
+
 
 	// Set Waveform in Phase Correct Mode
 
@@ -102,5 +121,33 @@ void __vector_11 (void)
 		TIMER0_OVF_CALLBACK();
 	}
 }
+
+void MTIMER1_voidInit(void)
+{
+	// Select Timer mode -> 14
+	CLR_BIT(TCCR1A,WGM10);
+	SET_BIT(TCCR1A,WGM11);
+	SET_BIT(TCCR1B,WGM12);
+	SET_BIT(TCCR1B,WGM13);
+
+	// Non-Inverting mode for OC1A
+	CLR_BIT(TCCR1A , COM1A0);
+	SET_BIT(TCCR1A , COM1A1);
+
+	// ICR1 <- 19,999
+	ICR1=19999;
+	// Set OCR1A <- 1000
+	OCR1A = 1000;
+
+	// Start Timer by setting its CLK
+	TCCR1B |= 0b000000100;
+}
+
+void MTIMER1_voidSetOCR1AValue(u16 A_u16value)
+{
+	OCR1A = A_u16value;
+}
+
+//void MTIMER1_void
 
 

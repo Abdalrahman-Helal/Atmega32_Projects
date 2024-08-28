@@ -8,7 +8,7 @@
 #ifndef INCLUDE_MCAL_TIMER_TIMER_CFG_H_
 #define INCLUDE_MCAL_TIMER_TIMER_CFG_H_
 
-#define TIMER0_MODE CTC_MODE
+#define TIMER0_MODE FAST_PWM_MODE
 
 
 
@@ -29,12 +29,21 @@
 #define OCR0_VALUE 199
 
 
-/*
+/* Normal Mode
  * 0 0 Normal port operation, OC0 disconnected.
  0 1 Toggle OC0 on compare match
  1 0 Clear OC0 on compare match
  1 1 Set OC0 on compare match
  */
-#define OC0_MODE 0
+
+/* Fast-PWM Mode
+ *  0 0 Normal port operation, OC0 disconnected.
+ *	0 1 Reserved
+ *	1 0 Clear OC0 on compare match, set OC0 at BOTTOM,
+ *	(nin-inverting mode)
+ *	1 1 Set OC0 on compare match, clear OC0 at BOTTOM,
+	(inverting mode)
+ */
+#define OC0_MODE 2
 
 #endif /* INCLUDE_MCAL_TIMER_TIMER_CFG_H_ */

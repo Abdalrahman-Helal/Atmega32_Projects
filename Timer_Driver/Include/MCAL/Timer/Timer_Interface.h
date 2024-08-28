@@ -21,6 +21,8 @@ void MTIMER0_voidSetOVFCallback (void (*A_ptrToFunc)(void));
 void MTIMER0_voidSetCTCCallback (void (*A_ptrToFunc)(void));
 void MTIMER0_voidSetOCR0Value(u8 A_u8OCR0Value);
 void MTIMER0_voidStopTimer (void);
+void MTIMER1_voidInit(void);
+void MTIMER1_voidSetOCR1AValue(u16 A_u16value);
 
 
 

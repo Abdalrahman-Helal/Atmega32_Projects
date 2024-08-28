@@ -62,19 +62,50 @@ void Timer0_CTC()
 //}
 
 	/* CTC Mode */
+//int main(void)
+//{
+////	 Timer 0 - > 8 	BIT , Prescaler -- > 8 , F_CPU --> 8 Mhz , 1 Sec
+//		MDIO_voidInit();
+//		MTIMER0_voidSetCTCCallback(Timer0_CTC);
+//		MTIMER0_voidInit();
+//		MGI_voidEnable();
+//		while(1)
+//		{
+//
+//		}
+//}
+
+
+
+	/* Fast PWM Mode */
+
 int main(void)
 {
-//	 Timer 0 - > 8 	BIT , Prescaler -- > 8 , F_CPU --> 8 Mhz , 1 Sec
-		MDIO_voidInit();
-		MTIMER0_voidSetCTCCallback(Timer0_CTC);
-		MTIMER0_voidInit();
-		MGI_voidEnable();
-		while(1)
+	// Set PB3 as output (FAST-PWM pin)
+	MDIO_voidInit();
+	MDIO_voidSetPinDirection(DIO_PORTB , PIN3 , DIO_OUTPUT);
+	MTIMER0_voidInit();
+	while(1)
+	{
+		for(u16 i=0; i <255; i+=10)
 		{
-
+			MTIMER0_voidSetOCR0Value(i);
+			_delay_ms(100);
 		}
+	}
 }
 
+
+		/*Timer 1 , Servo Motor*/
+//int main(void)
+//{
+//	MDIO_voidSetPinDirection(DIO_PORTD ,PIN5 , DIO_OUTPUT);
+//	MTIMER1_voidInit();
+//	while(1)
+//	{
+//
+//	}
+//}
 
 
 

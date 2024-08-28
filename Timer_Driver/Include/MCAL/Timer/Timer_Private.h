@@ -7,9 +7,21 @@
 
 #ifndef INCLUDE_MCAL_TIMER_TIMER_PRIVATE_H_
 #define INCLUDE_MCAL_TIMER_TIMER_PRIVATE_H_
-
+// Timer 0
 #define WGM01 3
 #define WGM00 6
+
+// Timer 1
+#define WGM10 0
+#define WGM11 1
+#define WGM12 3
+#define WGM13 4
+
+#define COM1B0 4
+#define COM1B1 5
+
+#define COM1A0 6
+#define COM1A1 7
 
 #define TOIE0 0
 #define OCIE0 1
@@ -27,6 +39,7 @@
 #define TCNT1  (*((volatile u16 * )0x4C))
 #define	OCR1AH (*((volatile u8 * )0x4B))
 #define OCR1AL (*((volatile u8 * )0x4A))
+#define OCR1A   (*((volatile u16 * )0x4B))
 #define OCR1BH (*((volatile u8 * )0x49))
 #define OCR1BL (*((volatile u8 * )0x48))
 #define OCR1B  (*((volatile u16 * )0x48))
