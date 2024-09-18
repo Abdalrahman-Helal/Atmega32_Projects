@@ -26,6 +26,7 @@ void HLCD_vInit(void)
 
 	// Send Function Set
 	HLCD_vSendCommand(0b00111000);
+
 	// wait 39us
 	_delay_ms(1);
 
@@ -40,7 +41,7 @@ void HLCD_vInit(void)
 	_delay_ms(2);
 
 	// Entry Mode Set
-	HLCD_vSendCommand(0b00000110);
+	HLCD_vSendCommand(0b00000110);  // *************************** SET LAST BIT TO 0
 	_delay_ms(1);
 
 }
@@ -185,4 +186,10 @@ void HLCD_vSetCursorPosition( u8 A_u8LinePos, u8 A_u8LineNo )
 		break;
 
 	}
+}
+
+void HLCD_vDisplayShift(void)
+{
+//	HLCD_vSendCommand(0b00000111);
+	HLCD_vSendCommand(0b00011100);
 }

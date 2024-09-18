@@ -146,7 +146,7 @@ LOAD x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x1df0
+.text           0x00000000     0x1fe2
  *(.vectors)
  .vectors       0x00000000       0x54 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000000                __vectors
@@ -299,24 +299,27 @@ LOAD x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5
  .text.HLCD_vSetCursorPosition
                 0x00001c7e       0x4e ./HAL/LCD/LCD_Prg.o
                 0x00001c7e                HLCD_vSetCursorPosition
- .text.main     0x00001ccc       0x64 ./APP/main.o
-                0x00001ccc                main
- .text.libgcc   0x00001d30       0x26 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
-                0x00001d30                __divmodhi4
-                0x00001d30                _div
- .text.libgcc   0x00001d56        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x00001d56        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x00001d56       0x28 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
-                0x00001d56                __udivmodhi4
- .text.libgcc   0x00001d7e       0x38 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
-                0x00001d7e                __prologue_saves__
- .text.libgcc   0x00001db6       0x36 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
-                0x00001db6                __epilogue_restores__
-                0x00001dec                . = ALIGN (0x2)
+ .text.HLCD_vDisplayShift
+                0x00001ccc       0x14 ./HAL/LCD/LCD_Prg.o
+                0x00001ccc                HLCD_vDisplayShift
+ .text.main     0x00001ce0      0x242 ./APP/main.o
+                0x00001ce0                main
+ .text.libgcc   0x00001f22       0x26 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+                0x00001f22                __divmodhi4
+                0x00001f22                _div
+ .text.libgcc   0x00001f48        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00001f48        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00001f48       0x28 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x00001f48                __udivmodhi4
+ .text.libgcc   0x00001f70       0x38 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x00001f70                __prologue_saves__
+ .text.libgcc   0x00001fa8       0x36 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x00001fa8                __epilogue_restores__
+                0x00001fde                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00001dec        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x00001dec                exit
-                0x00001dec                _exit
+ .fini9         0x00001fde        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00001fde                exit
+                0x00001fde                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -335,11 +338,11 @@ LOAD x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00001dec        0x4 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x00001fde        0x4 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00001df0                _etext = .
+                0x00001fe2                _etext = .
 
-.data           0x00800060       0x20 load address 0x00001df0
+.data           0x00800060       0x20 load address 0x00001fe2
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
@@ -405,8 +408,8 @@ LOAD x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5
  *(.bss*)
  *(COMMON)
                 0x00800080                PROVIDE (__bss_end, .)
-                0x00001df0                __data_load_start = LOADADDR (.data)
-                0x00001e10                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00001fe2                __data_load_start = LOADADDR (.data)
+                0x00002002                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800080        0x0
                 0x00800080                PROVIDE (__noinit_start, .)
@@ -431,17 +434,17 @@ LOAD x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5
 .signature
  *(.signature*)
 
-.stab           0x00000000     0x1590
+.stab           0x00000000     0x1740
  *(.stab)
  .stab          0x00000000      0x75c ./MCAL/DIO/DIO_Prg.o
- .stab          0x0000075c      0xbe8 ./HAL/LCD/LCD_Prg.o
-                                0xd74 (size before relaxing)
- .stab          0x00001344      0x24c ./APP/main.o
-                                0x3e4 (size before relaxing)
+ .stab          0x0000075c      0xc18 ./HAL/LCD/LCD_Prg.o
+                                0xda4 (size before relaxing)
+ .stab          0x00001374      0x3cc ./APP/main.o
+                                0x564 (size before relaxing)
 
-.stabstr        0x00000000      0xc10
+.stabstr        0x00000000      0xc2b
  *(.stabstr)
- .stabstr       0x00000000      0xc10 ./MCAL/DIO/DIO_Prg.o
+ .stabstr       0x00000000      0xc2b ./MCAL/DIO/DIO_Prg.o
 
 .stab.excl
  *(.stab.excl)

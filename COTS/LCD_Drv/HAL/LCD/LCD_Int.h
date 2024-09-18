@@ -32,5 +32,7 @@ void HLCD_vSetCursorPosition( u8 A_u8LinePos, u8 A_u8LineNo );
 void HLCD_vSaveCustomChar( u8 L_CGRAM_Index, u8 A_CustomCharData[]);
 void HLCD_vDisplayCustomChar(u8 A_u8CGRAM_IDX);
 
+void HLCD_vDisplayShift(void);
+
 
 #endif /* HAL_LCD_LCD_INT_H_ */

@@ -54,6 +54,7 @@ u8 C3 [] ={		 // L
 int main(void)
 {
 	HLCD_vInit();
+
 //	HLCD_vSendChar('H');
 //	HLCD_vSendChar('E');
 //	HLCD_vSendChar('L');
@@ -74,22 +75,31 @@ int main(void)
 //	HLCD_vPrintNumber(123);
 
 
+
 	HLCD_vSaveCustomChar(1,C1);
-	HLCD_vSetCursorPosition(15,0);
+	HLCD_vSetCursorPosition(13,0);
 	HLCD_vDisplayCustomChar(1);
 
 	HLCD_vSaveCustomChar(2,C2);
-	HLCD_vSetCursorPosition(14,0);
+	HLCD_vSetCursorPosition(12,0);
 	HLCD_vDisplayCustomChar(2);
 
 	HLCD_vSaveCustomChar(3,C3);
-	HLCD_vSetCursorPosition(13,0);
+	HLCD_vSetCursorPosition(11,0);
 	HLCD_vDisplayCustomChar(3);
-	HLCD_vSetCursorPosition(12,0);
+	HLCD_vSetCursorPosition(10,0);
+
+
+
+
 
 
 	while(1)
 	{
+		_delay_ms(100);
+		HLCD_vDisplayShift();
+		_delay_ms(100);
+		HLCD_vSendCommand(0b00011000);
 
 	}
 
