@@ -152,7 +152,7 @@ LOAD x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x38ce
+.text           0x00000000     0x3d28
  *(.vectors)
  .vectors       0x00000000       0x54 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000000                __vectors
@@ -270,92 +270,92 @@ LOAD x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5
                 0x00000cc6      0x358 ./Src/main.o
                 0x00000cc6                SmartHomeLoginPassword
  .text.SmartHomeMenu
-                0x0000101e      0x488 ./Src/main.o
+                0x0000101e      0x87c ./Src/main.o
                 0x0000101e                SmartHomeMenu
- .text.main     0x000014a6      0x11c ./Src/main.o
-                0x000014a6                main
+ .text.main     0x0000189a      0x11c ./Src/main.o
+                0x0000189a                main
  .text.MDIO_vSetPinDir
-                0x000015c2      0x246 ./MCAL/DIO/DIO_Program.o
-                0x000015c2                MDIO_vSetPinDir
+                0x000019b6      0x246 ./MCAL/DIO/DIO_Program.o
+                0x000019b6                MDIO_vSetPinDir
  .text.MDIO_vSetPinVal
-                0x00001808      0x246 ./MCAL/DIO/DIO_Program.o
-                0x00001808                MDIO_vSetPinVal
+                0x00001bfc      0x246 ./MCAL/DIO/DIO_Program.o
+                0x00001bfc                MDIO_vSetPinVal
  .text.MDIO_GetPinVal
-                0x00001a4e      0x102 ./MCAL/DIO/DIO_Program.o
-                0x00001a4e                MDIO_GetPinVal
+                0x00001e42      0x102 ./MCAL/DIO/DIO_Program.o
+                0x00001e42                MDIO_GetPinVal
  .text.MDIO_vTogglePinVal
-                0x00001b50      0x10a ./MCAL/DIO/DIO_Program.o
-                0x00001b50                MDIO_vTogglePinVal
+                0x00001f44      0x10a ./MCAL/DIO/DIO_Program.o
+                0x00001f44                MDIO_vTogglePinVal
  .text.MDIO_vSetPortDir
-                0x00001c5a       0x88 ./MCAL/DIO/DIO_Program.o
-                0x00001c5a                MDIO_vSetPortDir
+                0x0000204e       0x88 ./MCAL/DIO/DIO_Program.o
+                0x0000204e                MDIO_vSetPortDir
  .text.MDIO_vSetPortVal
-                0x00001ce2       0x88 ./MCAL/DIO/DIO_Program.o
-                0x00001ce2                MDIO_vSetPortVal
+                0x000020d6       0x88 ./MCAL/DIO/DIO_Program.o
+                0x000020d6                MDIO_vSetPortVal
  .text.MDIO_vInit
-                0x00001d6a       0x42 ./MCAL/DIO/DIO_Program.o
-                0x00001d6a                MDIO_vInit
+                0x0000215e       0x42 ./MCAL/DIO/DIO_Program.o
+                0x0000215e                MDIO_vInit
  .text.HSSD_vInit
-                0x00001dac       0x84 ./HAL/SSD/SSD_Program.o
-                0x00001dac                HSSD_vInit
+                0x000021a0       0xa6 ./HAL/SSD/SSD_Program.o
+                0x000021a0                HSSD_vInit
  .text.HSSD_vDisplayNumber
-                0x00001e30       0x88 ./HAL/SSD/SSD_Program.o
-                0x00001e30                HSSD_vDisplayNumber
+                0x00002246       0x88 ./HAL/SSD/SSD_Program.o
+                0x00002246                HSSD_vDisplayNumber
  .text.HSSD_vDisplayNumberAscending
-                0x00001eb8      0x5b8 ./HAL/SSD/SSD_Program.o
-                0x00001eb8                HSSD_vDisplayNumberAscending
+                0x000022ce      0x5b8 ./HAL/SSD/SSD_Program.o
+                0x000022ce                HSSD_vDisplayNumberAscending
  .text.HSSD_vCountDown
-                0x00002470      0x5ba ./HAL/SSD/SSD_Program.o
-                0x00002470                HSSD_vCountDown
+                0x00002886      0x5fe ./HAL/SSD/SSD_Program.o
+                0x00002886                HSSD_vCountDown
  .text.HLCD_vSendCommand
-                0x00002a2a      0x13c ./HAL/LCD/LCD_Program.o
-                0x00002a2a                HLCD_vSendCommand
+                0x00002e84      0x13c ./HAL/LCD/LCD_Program.o
+                0x00002e84                HLCD_vSendCommand
  .text.HLCD_vSendData
-                0x00002b66      0x13c ./HAL/LCD/LCD_Program.o
-                0x00002b66                HLCD_vSendData
+                0x00002fc0      0x13c ./HAL/LCD/LCD_Program.o
+                0x00002fc0                HLCD_vSendData
  .text.HLCD_vInit
-                0x00002ca2      0x4f4 ./HAL/LCD/LCD_Program.o
-                0x00002ca2                HLCD_vInit
+                0x000030fc      0x4f4 ./HAL/LCD/LCD_Program.o
+                0x000030fc                HLCD_vInit
  .text.HLCD_vClearDisplay
-                0x00003196      0x110 ./HAL/LCD/LCD_Program.o
-                0x00003196                HLCD_vClearDisplay
+                0x000035f0      0x110 ./HAL/LCD/LCD_Program.o
+                0x000035f0                HLCD_vClearDisplay
  .text.HLCD_vDisplayLongString
-                0x000032a6       0x68 ./HAL/LCD/LCD_Program.o
-                0x000032a6                HLCD_vDisplayLongString
+                0x00003700       0x68 ./HAL/LCD/LCD_Program.o
+                0x00003700                HLCD_vDisplayLongString
  .text.HLCD_vDisplayString
-                0x0000330e       0x38 ./HAL/LCD/LCD_Program.o
-                0x0000330e                HLCD_vDisplayString
+                0x00003768       0x38 ./HAL/LCD/LCD_Program.o
+                0x00003768                HLCD_vDisplayString
  .text.HLCD_vGoToPos
-                0x00003346       0x50 ./HAL/LCD/LCD_Program.o
-                0x00003346                HLCD_vGoToPos
+                0x000037a0       0x50 ./HAL/LCD/LCD_Program.o
+                0x000037a0                HLCD_vGoToPos
  .text.HLCD_vDisplayNumber
-                0x00003396       0xb6 ./HAL/LCD/LCD_Program.o
-                0x00003396                HLCD_vDisplayNumber
+                0x000037f0       0xb6 ./HAL/LCD/LCD_Program.o
+                0x000037f0                HLCD_vDisplayNumber
  .text.HLCD_vSendSpecialSymbol
-                0x0000344c       0x84 ./HAL/LCD/LCD_Program.o
-                0x0000344c                HLCD_vSendSpecialSymbol
+                0x000038a6       0x84 ./HAL/LCD/LCD_Program.o
+                0x000038a6                HLCD_vSendSpecialSymbol
  .text.HKEYPAD_vInit
-                0x000034d0       0x1e ./HAL/Keypad/Keypad_Program.o
-                0x000034d0                HKEYPAD_vInit
+                0x0000392a       0x1e ./HAL/Keypad/Keypad_Program.o
+                0x0000392a                HKEYPAD_vInit
  .text.HKEYPAD_u8GetPressedKey
-                0x000034ee      0x2e0 ./HAL/Keypad/Keypad_Program.o
-                0x000034ee                HKEYPAD_u8GetPressedKey
+                0x00003948      0x2e0 ./HAL/Keypad/Keypad_Program.o
+                0x00003948                HKEYPAD_u8GetPressedKey
  .text.HKEYPAD_u16MultiDigitInput
-                0x000037ce       0x66 ./HAL/Keypad/Keypad_Program.o
-                0x000037ce                HKEYPAD_u16MultiDigitInput
- .text.libgcc   0x00003834       0x28 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
-                0x00003834                __udivmodhi4
- .text.libgcc   0x0000385c        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x0000385c        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x0000385c       0x38 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
-                0x0000385c                __prologue_saves__
- .text.libgcc   0x00003894       0x36 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
-                0x00003894                __epilogue_restores__
-                0x000038ca                . = ALIGN (0x2)
+                0x00003c28       0x66 ./HAL/Keypad/Keypad_Program.o
+                0x00003c28                HKEYPAD_u16MultiDigitInput
+ .text.libgcc   0x00003c8e       0x28 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x00003c8e                __udivmodhi4
+ .text.libgcc   0x00003cb6        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00003cb6        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00003cb6       0x38 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x00003cb6                __prologue_saves__
+ .text.libgcc   0x00003cee       0x36 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x00003cee                __epilogue_restores__
+                0x00003d24                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000038ca        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x000038ca                exit
-                0x000038ca                _exit
+ .fini9         0x00003d24        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00003d24                exit
+                0x00003d24                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -374,11 +374,11 @@ LOAD x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000038ca        0x4 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x00003d24        0x4 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x000038ce                _etext = .
+                0x00003d28                _etext = .
 
-.data           0x00800060      0x1f2 load address 0x000038ce
+.data           0x00800060      0x1f2 load address 0x00003d28
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
@@ -416,7 +416,7 @@ LOAD x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5
  *(.rodata*)
  .rodata.C.0.1369
                 0x00800236        0xa ./HAL/SSD/SSD_Program.o
- .rodata.C.1.1443
+ .rodata.C.1.1452
                 0x00800240        0xa ./HAL/SSD/SSD_Program.o
  .rodata.ArrOfRows
                 0x0080024a        0x4 ./HAL/Keypad/Keypad_Program.o
@@ -458,8 +458,8 @@ LOAD x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5
  *(.bss*)
  *(COMMON)
                 0x00800252                PROVIDE (__bss_end, .)
-                0x000038ce                __data_load_start = LOADADDR (.data)
-                0x00003ac0                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00003d28                __data_load_start = LOADADDR (.data)
+                0x00003f1a                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800252        0x0
                 0x00800252                PROVIDE (__noinit_start, .)
@@ -484,21 +484,21 @@ LOAD x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5
 .signature
  *(.signature*)
 
-.stab           0x00000000     0x3384
+.stab           0x00000000     0x35dc
  *(.stab)
- .stab          0x00000000      0xdd4 ./Src/main.o
- .stab          0x00000dd4      0x684 ./MCAL/DIO/DIO_Program.o
+ .stab          0x00000000      0xff0 ./Src/main.o
+ .stab          0x00000ff0      0x684 ./MCAL/DIO/DIO_Program.o
                                 0x690 (size before relaxing)
- .stab          0x00001458      0xc54 ./HAL/SSD/SSD_Program.o
-                                0xdec (size before relaxing)
- .stab          0x000020ac      0xca8 ./HAL/LCD/LCD_Program.o
+ .stab          0x00001674      0xc90 ./HAL/SSD/SSD_Program.o
+                                0xe28 (size before relaxing)
+ .stab          0x00002304      0xca8 ./HAL/LCD/LCD_Program.o
                                 0xe40 (size before relaxing)
- .stab          0x00002d54      0x630 ./HAL/Keypad/Keypad_Program.o
+ .stab          0x00002fac      0x630 ./HAL/Keypad/Keypad_Program.o
                                 0x7c8 (size before relaxing)
 
-.stabstr        0x00000000     0x15af
+.stabstr        0x00000000     0x15b7
  *(.stabstr)
- .stabstr       0x00000000     0x15af ./Src/main.o
+ .stabstr       0x00000000     0x15b7 ./Src/main.o
 
 .stab.excl
  *(.stab.excl)

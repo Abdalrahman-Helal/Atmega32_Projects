@@ -24,6 +24,6 @@
 void HSSD_vInit(DIO_PORT_e A_PortID);
 void HSSD_vDisplayNumber(DIO_PORT_e A_PortID, u8 A_u8NumberValue);
 void HSSD_vDisplayNumberAscending(DIO_PORT_e A_PortID , u16 A_u16TimetoWait);
-void HSSD_vCountDown(DIO_PORT_e A_PortID , u8 A_u8Time , u16 A_u16TimetoWait);
+void HSSD_vCountDown(DIO_PORT_e A_PortID , s8 A_s8Time, u16 A_u16TimetoWait);
 
 #endif /* INCLUDE_HAL_SSD_SSD_INTERFACE_H_ */

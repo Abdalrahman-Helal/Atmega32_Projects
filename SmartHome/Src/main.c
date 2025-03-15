@@ -106,23 +106,24 @@ void SmartHomeMenu()
 		case '1':
 			HLCD_vClearDisplay();
 			HLCD_vDisplayString("Lights ON");
-			MDIO_vSetPortDir(DIO_PORTC, 0x08);
-			MDIO_vSetPortVal(DIO_PORTC , 0x08);
+			MDIO_vSetPinDir(LED_PORT,LED_PIN,DIO_OUTPUT);
+			MDIO_vSetPinVal(LED_PORT,LED_PIN,DIO_HIGH);
+			_delay_ms(500);
 
 			break;
 		case '2':
 			HLCD_vClearDisplay();
 			HLCD_vDisplayString("Lights OFF");
-			MDIO_vSetPortDir(DIO_PORTB , 0x01);
-			MDIO_vSetPortVal(DIO_PORTB , 0x00);
+			MDIO_vSetPinDir(LED_PORT,LED_PIN,DIO_OUTPUT);
+			MDIO_vSetPinVal(LED_PORT,LED_PIN,DIO_LOW);
+			_delay_ms(500);
 			break;
 
 		case '3':
 			HLCD_vClearDisplay();
 			HLCD_vDisplayString("Back");
-			HLCD_vClearDisplay();
 			_delay_ms(200);
-			SmartHomeMenu();
+			HLCD_vClearDisplay();
 			break;
 
 		default:
@@ -157,16 +158,18 @@ void SmartHomeMenu()
 			u8 Time = HKEYPAD_u16MultiDigitInput();
 			HLCD_vGoToPos(LCD_ROW2 , LCD_COL1);
 			HLCD_vDisplayNumber(Time);
-			HSSD_vCountDown(SSD_PORT , Time , 500);
+			HSSD_vCountDown(SSD_PORT , Time , SSD_DELAY);
+			HLCD_vClearDisplay();
 			HLCD_vDisplayString("Time Finished");
+			_delay_ms(500);
+			HLCD_vClearDisplay();
 			break;
 
 		case '2':
 			HLCD_vClearDisplay();
-			_delay_ms(200);
 			HLCD_vDisplayString("Back");
+			_delay_ms(200);
 			HLCD_vClearDisplay();
-			SmartHomeMenu();
 			break;
 
 		default:
@@ -188,18 +191,15 @@ void main(void)
 	HLCD_vInit();
 	HSSD_vInit(SSD_PORT);
 
+	HLCD_vDisplayString("Hello Helal");
+	_delay_ms(200);
+	HLCD_vClearDisplay();
+	SmartHomeLoginPassword(); // enter password and check it
 
 
 	while(1)
 	{
-		HLCD_vDisplayString("Hello Helal");
-		_delay_ms(200);
-		HLCD_vClearDisplay();
-
-		SmartHomeLoginPassword(); // enter password and check it
 		SmartHomeMenu();
-
-
 
 	} // end of while loop
 }
