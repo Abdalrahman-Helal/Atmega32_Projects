@@ -10,9 +10,12 @@ RM := rm -rf
 -include sources.mk
 -include Src/subdir.mk
 -include MCAL/DIO/subdir.mk
+-include HAL/StepperMotor/subdir.mk
 -include HAL/SSD/subdir.mk
 -include HAL/LCD/subdir.mk
 -include HAL/Keypad/subdir.mk
+-include HAL/DCM/subdir.mk
+-include HAL/Buzzer/subdir.mk
 -include subdir.mk
 -include objects.mk
 

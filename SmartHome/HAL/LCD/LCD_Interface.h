@@ -44,7 +44,7 @@ typedef enum{
 	LCD_PATTERN5,
 	LCD_PATTERN6,
 	LCD_PATTERN7,
-};
+}LCD_PATTERN_e;
 
 void HLCD_vSendCommand(u8 A_u8Command);
 void HLCD_vSendData(u8 A_u8Command);
