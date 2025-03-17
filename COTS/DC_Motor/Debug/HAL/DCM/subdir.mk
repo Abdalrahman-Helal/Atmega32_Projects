@@ -4,13 +4,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../HAL/DCM/DCM_Prg.c 
+../HAL/DCM/DCM_Program.c 
 
 OBJS += \
-./HAL/DCM/DCM_Prg.o 
+./HAL/DCM/DCM_Program.o 
 
 C_DEPS += \
-./HAL/DCM/DCM_Prg.d 
+./HAL/DCM/DCM_Program.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
