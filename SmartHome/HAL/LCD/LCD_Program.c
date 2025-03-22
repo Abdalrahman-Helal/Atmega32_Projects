@@ -78,7 +78,7 @@ void HLCD_vClearDisplay(void)
 	_delay_ms(3);
 }
 
-void HLCD_vDisplayLongString(u8 *A_u8PtrToString)
+void HLCD_vDisplayLongString(const u8 *A_u8PtrToString)
 {
 	u8 ROW = LCD_ROW1 , COL =LCD_COL1;
 	while(*A_u8PtrToString > 0)
@@ -95,12 +95,12 @@ void HLCD_vDisplayLongString(u8 *A_u8PtrToString)
 	}
 }
 
-void HLCD_vDisplayString(u8 *A_u8PtrToString)
+void HLCD_vDisplayString(const u8 *A_u8PtrToString)
 {
 	while(*A_u8PtrToString > 0)
 	{
 		HLCD_vSendData(*A_u8PtrToString);
-		*A_u8PtrToString++;
+		A_u8PtrToString++;
 
 	}
 }

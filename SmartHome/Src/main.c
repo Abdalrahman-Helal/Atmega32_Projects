@@ -7,23 +7,27 @@
 
 #include <util/delay.h>
 
-#include "../LIB/STD_TYPES.h"
-#include "../LIB/BIT_MATH.h"
+#include "LIB/STD_TYPES.h"
+#include "LIB/BIT_MATH.h"
 
-#include "../MCAL/DIO/DIO_Interface.h"
-#include "../HAL/SSD/SSD_Interface.h"
-#include "../HAL/LCD/LCD_Interface.h"
-#include "../HAL/KEYPAD/KEYPAD_Interface.h"
-#include "../HAL/DCM/DCM_Interface.h"
+#include "MCAL/DIO/DIO_Interface.h"
+#include "HAL/SSD/SSD_Interface.h"
+#include "HAL/LCD/LCD_Interface.h"
+#include "HAL/KEYPAD/KEYPAD_Interface.h"
+#include "HAL/DCM/DCM_Interface.h"
+#include "HAL/Buzzer/Buzzer_Interface.h"
 
-#include "../mainConfg/Cfg.h"
+#include "mainConfg/Cfg.h"
 
 
-#define OFF 0
-#define ON 1
+#define LED_OFF 0
+#define LED_ON 1
 
-u8 DoorStatus = OFF;
-u8 LED_Status = OFF;
+#define DOOR_CLOSE 0
+#define DOOR_OPEN  1
+
+u8 DoorStatus = DOOR_CLOSE;
+u8 LED_Status = LED_OFF;
 
 #define F_CPU 12000000UL
 
@@ -38,7 +42,6 @@ void SmartHomeWelcome(void)
 void SmartHomeLoginPassword()
 {
 	u16 L_Password;
-	u8 PasswordStatus = UnValid;
 
 	HLCD_vDisplayString("Enter password: ");
 	HLCD_vGoToPos(LCD_ROW2 , LCD_COL1);
@@ -48,14 +51,10 @@ void SmartHomeLoginPassword()
 	for(u8 i=0; i <3; i++)
 	{
 		L_Password= HKEYPAD_u16MultiDigitInput();
+		HLCD_vClearDisplay();
+		if(PASSWORD == L_Password )
+		{
 
-		if(L_Password == Password)
-		{
-			PasswordStatus = Valid;
-		}
-		if(PasswordStatus == Valid)
-		{
-			HLCD_vClearDisplay();
 			HLCD_vDisplayString("Welcome Helal");
 			_delay_ms(200);
 			HLCD_vClearDisplay();
@@ -65,7 +64,6 @@ void SmartHomeLoginPassword()
 		{
 			if(i < 2)
 			{
-				HLCD_vClearDisplay();
 				HLCD_vDisplayString("Try Again");
 				_delay_ms(200);
 				HLCD_vClearDisplay();
@@ -73,7 +71,6 @@ void SmartHomeLoginPassword()
 			}
 			else
 			{
-				HLCD_vClearDisplay();
 				HLCD_vDisplayString("Try Later");
 				_delay_ms(500);
 				HLCD_vClearDisplay();
@@ -122,14 +119,14 @@ void SmartHomeMenu()
 		switch (LED_Action)
 		{
 		case '1':
-			if(LED_Status == OFF)
+			if(LED_Status == LED_OFF)
 			{
 				HLCD_vClearDisplay();
 				HLCD_vDisplayString("Lights ON");
 				MDIO_vSetPinDir(LED_PORT,LED_PIN,DIO_OUTPUT);
 				MDIO_vSetPinVal(LED_PORT,LED_PIN,DIO_HIGH);
 				_delay_ms(500);
-				LED_Status = ON;
+				LED_Status = LED_ON;
 			}
 			else
 			{
@@ -140,14 +137,14 @@ void SmartHomeMenu()
 			}
 			break;
 		case '2':
-			if(LED_Status ==  ON)
+			if(LED_Status ==  LED_ON)
 			{
 				HLCD_vClearDisplay();
 				HLCD_vDisplayString("Lights OFF");
 				MDIO_vSetPinDir(LED_PORT,LED_PIN,DIO_OUTPUT);
 				MDIO_vSetPinVal(LED_PORT,LED_PIN,DIO_LOW);
 				_delay_ms(500);
-				LED_Status = OFF;
+				LED_Status = LED_OFF;
 			}
 			else
 			{
@@ -240,7 +237,7 @@ void SmartHomeMenu()
 		{
 
 		case '1':
-			if(DoorStatus == OFF)
+			if(DoorStatus == DOOR_CLOSE)
 			{
 				HLCD_vClearDisplay();
 				HDCM_vRotateCW();
@@ -250,7 +247,7 @@ void SmartHomeMenu()
 				HLCD_vClearDisplay();
 				HLCD_vDisplayString("Opened");
 				_delay_ms(1000);
-				DoorStatus = ON;
+				DoorStatus = DOOR_OPEN;
 			}
 			else
 			{
@@ -262,7 +259,7 @@ void SmartHomeMenu()
 			break;
 
 		case '2':
-			if(DoorStatus == ON)
+			if(DoorStatus == DOOR_OPEN)
 			{
 				HLCD_vClearDisplay();
 				HDCM_vRotateCCW();
@@ -272,7 +269,7 @@ void SmartHomeMenu()
 				HLCD_vClearDisplay();
 				HLCD_vDisplayString("Closed");
 				_delay_ms(1000);
-				DoorStatus = OFF;
+				DoorStatus = DOOR_CLOSE;
 			}
 			else
 			{

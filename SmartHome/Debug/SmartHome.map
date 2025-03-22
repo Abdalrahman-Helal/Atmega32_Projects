@@ -157,7 +157,7 @@ LOAD x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x515c
+.text           0x00000000     0x5148
  *(.vectors)
  .vectors       0x00000000       0x54 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000000                __vectors
@@ -281,123 +281,123 @@ LOAD x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5
                 0x00000cd6      0x116 ./Src/main.o
                 0x00000cd6                SmartHomeWelcome
  .text.SmartHomeLoginPassword
-                0x00000dec      0x358 ./Src/main.o
+                0x00000dec      0x344 ./Src/main.o
                 0x00000dec                SmartHomeLoginPassword
  .text.SmartHomeMenu
-                0x00001144     0x16e0 ./Src/main.o
-                0x00001144                SmartHomeMenu
- .text.main     0x00002824       0x2c ./Src/main.o
-                0x00002824                main
+                0x00001130     0x16e0 ./Src/main.o
+                0x00001130                SmartHomeMenu
+ .text.main     0x00002810       0x2c ./Src/main.o
+                0x00002810                main
  .text.MDIO_vSetPinDir
-                0x00002850      0x246 ./MCAL/DIO/DIO_Program.o
-                0x00002850                MDIO_vSetPinDir
+                0x0000283c      0x246 ./MCAL/DIO/DIO_Program.o
+                0x0000283c                MDIO_vSetPinDir
  .text.MDIO_vSetPinVal
-                0x00002a96      0x246 ./MCAL/DIO/DIO_Program.o
-                0x00002a96                MDIO_vSetPinVal
+                0x00002a82      0x246 ./MCAL/DIO/DIO_Program.o
+                0x00002a82                MDIO_vSetPinVal
  .text.MDIO_GetPinVal
-                0x00002cdc      0x102 ./MCAL/DIO/DIO_Program.o
-                0x00002cdc                MDIO_GetPinVal
+                0x00002cc8      0x102 ./MCAL/DIO/DIO_Program.o
+                0x00002cc8                MDIO_GetPinVal
  .text.MDIO_vTogglePinVal
-                0x00002dde      0x10a ./MCAL/DIO/DIO_Program.o
-                0x00002dde                MDIO_vTogglePinVal
+                0x00002dca      0x10a ./MCAL/DIO/DIO_Program.o
+                0x00002dca                MDIO_vTogglePinVal
  .text.MDIO_vSetPortDir
-                0x00002ee8       0x88 ./MCAL/DIO/DIO_Program.o
-                0x00002ee8                MDIO_vSetPortDir
+                0x00002ed4       0x88 ./MCAL/DIO/DIO_Program.o
+                0x00002ed4                MDIO_vSetPortDir
  .text.MDIO_vSetPortVal
-                0x00002f70       0x88 ./MCAL/DIO/DIO_Program.o
-                0x00002f70                MDIO_vSetPortVal
+                0x00002f5c       0x88 ./MCAL/DIO/DIO_Program.o
+                0x00002f5c                MDIO_vSetPortVal
  .text.MDIO_vInit
-                0x00002ff8       0x42 ./MCAL/DIO/DIO_Program.o
-                0x00002ff8                MDIO_vInit
+                0x00002fe4       0x42 ./MCAL/DIO/DIO_Program.o
+                0x00002fe4                MDIO_vInit
  .text.HSTEPPER_vInit
-                0x0000303a       0x36 ./HAL/StepperMotor/Stepper_Program.o
-                0x0000303a                HSTEPPER_vInit
+                0x00003026       0x36 ./HAL/StepperMotor/Stepper_Program.o
+                0x00003026                HSTEPPER_vInit
  .text.HSTEPPER_vRotate
-                0x00003070      0x494 ./HAL/StepperMotor/Stepper_Program.o
-                0x00003070                HSTEPPER_vRotate
+                0x0000305c      0x494 ./HAL/StepperMotor/Stepper_Program.o
+                0x0000305c                HSTEPPER_vRotate
  .text.HSSD_vInit
-                0x00003504       0xa6 ./HAL/SSD/SSD_Program.o
-                0x00003504                HSSD_vInit
+                0x000034f0       0xa6 ./HAL/SSD/SSD_Program.o
+                0x000034f0                HSSD_vInit
  .text.HSSD_vDisplayNumber
-                0x000035aa       0x88 ./HAL/SSD/SSD_Program.o
-                0x000035aa                HSSD_vDisplayNumber
+                0x00003596       0x88 ./HAL/SSD/SSD_Program.o
+                0x00003596                HSSD_vDisplayNumber
  .text.HSSD_vDisplayNumberAscending
-                0x00003632      0x5b8 ./HAL/SSD/SSD_Program.o
-                0x00003632                HSSD_vDisplayNumberAscending
+                0x0000361e      0x5b8 ./HAL/SSD/SSD_Program.o
+                0x0000361e                HSSD_vDisplayNumberAscending
  .text.HSSD_vCountDown
-                0x00003bea      0x5fe ./HAL/SSD/SSD_Program.o
-                0x00003bea                HSSD_vCountDown
+                0x00003bd6      0x5fe ./HAL/SSD/SSD_Program.o
+                0x00003bd6                HSSD_vCountDown
  .text.HLCD_vSendCommand
-                0x000041e8      0x13c ./HAL/LCD/LCD_Program.o
-                0x000041e8                HLCD_vSendCommand
+                0x000041d4      0x13c ./HAL/LCD/LCD_Program.o
+                0x000041d4                HLCD_vSendCommand
  .text.HLCD_vSendData
-                0x00004324      0x13c ./HAL/LCD/LCD_Program.o
-                0x00004324                HLCD_vSendData
+                0x00004310      0x13c ./HAL/LCD/LCD_Program.o
+                0x00004310                HLCD_vSendData
  .text.HLCD_vInit
-                0x00004460      0x4f4 ./HAL/LCD/LCD_Program.o
-                0x00004460                HLCD_vInit
+                0x0000444c      0x4f4 ./HAL/LCD/LCD_Program.o
+                0x0000444c                HLCD_vInit
  .text.HLCD_vClearDisplay
-                0x00004954      0x110 ./HAL/LCD/LCD_Program.o
-                0x00004954                HLCD_vClearDisplay
+                0x00004940      0x110 ./HAL/LCD/LCD_Program.o
+                0x00004940                HLCD_vClearDisplay
  .text.HLCD_vDisplayLongString
-                0x00004a64       0x68 ./HAL/LCD/LCD_Program.o
-                0x00004a64                HLCD_vDisplayLongString
+                0x00004a50       0x68 ./HAL/LCD/LCD_Program.o
+                0x00004a50                HLCD_vDisplayLongString
  .text.HLCD_vDisplayString
-                0x00004acc       0x38 ./HAL/LCD/LCD_Program.o
-                0x00004acc                HLCD_vDisplayString
+                0x00004ab8       0x38 ./HAL/LCD/LCD_Program.o
+                0x00004ab8                HLCD_vDisplayString
  .text.HLCD_vGoToPos
-                0x00004b04       0x50 ./HAL/LCD/LCD_Program.o
-                0x00004b04                HLCD_vGoToPos
+                0x00004af0       0x50 ./HAL/LCD/LCD_Program.o
+                0x00004af0                HLCD_vGoToPos
  .text.HLCD_vDisplayNumber
-                0x00004b54       0xb6 ./HAL/LCD/LCD_Program.o
-                0x00004b54                HLCD_vDisplayNumber
+                0x00004b40       0xb6 ./HAL/LCD/LCD_Program.o
+                0x00004b40                HLCD_vDisplayNumber
  .text.HLCD_vSendSpecialSymbol
-                0x00004c0a       0x84 ./HAL/LCD/LCD_Program.o
-                0x00004c0a                HLCD_vSendSpecialSymbol
+                0x00004bf6       0x84 ./HAL/LCD/LCD_Program.o
+                0x00004bf6                HLCD_vSendSpecialSymbol
  .text.HKEYPAD_vInit
-                0x00004c8e       0x1e ./HAL/Keypad/Keypad_Program.o
-                0x00004c8e                HKEYPAD_vInit
+                0x00004c7a       0x1e ./HAL/Keypad/Keypad_Program.o
+                0x00004c7a                HKEYPAD_vInit
  .text.HKEYPAD_u8GetPressedKey
-                0x00004cac      0x2e0 ./HAL/Keypad/Keypad_Program.o
-                0x00004cac                HKEYPAD_u8GetPressedKey
+                0x00004c98      0x2e0 ./HAL/Keypad/Keypad_Program.o
+                0x00004c98                HKEYPAD_u8GetPressedKey
  .text.HKEYPAD_u16MultiDigitInput
-                0x00004f8c       0x66 ./HAL/Keypad/Keypad_Program.o
-                0x00004f8c                HKEYPAD_u16MultiDigitInput
+                0x00004f78       0x66 ./HAL/Keypad/Keypad_Program.o
+                0x00004f78                HKEYPAD_u16MultiDigitInput
  .text.HDCM_vInit
-                0x00004ff2       0x22 ./HAL/DCM/DCM_Program.o
-                0x00004ff2                HDCM_vInit
+                0x00004fde       0x22 ./HAL/DCM/DCM_Program.o
+                0x00004fde                HDCM_vInit
  .text.HDCM_vRotateCW
-                0x00005014       0x22 ./HAL/DCM/DCM_Program.o
-                0x00005014                HDCM_vRotateCW
+                0x00005000       0x22 ./HAL/DCM/DCM_Program.o
+                0x00005000                HDCM_vRotateCW
  .text.HDCM_vRotateCCW
-                0x00005036       0x22 ./HAL/DCM/DCM_Program.o
-                0x00005036                HDCM_vRotateCCW
+                0x00005022       0x22 ./HAL/DCM/DCM_Program.o
+                0x00005022                HDCM_vRotateCCW
  .text.HDCM_vStop
-                0x00005058       0x22 ./HAL/DCM/DCM_Program.o
-                0x00005058                HDCM_vStop
+                0x00005044       0x22 ./HAL/DCM/DCM_Program.o
+                0x00005044                HDCM_vStop
  .text.HBUZZER_vInit
-                0x0000507a       0x18 ./HAL/Buzzer/Buzzer_Program.o
-                0x0000507a                HBUZZER_vInit
+                0x00005066       0x18 ./HAL/Buzzer/Buzzer_Program.o
+                0x00005066                HBUZZER_vInit
  .text.HBUZZER_vTurnOn
-                0x00005092       0x18 ./HAL/Buzzer/Buzzer_Program.o
-                0x00005092                HBUZZER_vTurnOn
+                0x0000507e       0x18 ./HAL/Buzzer/Buzzer_Program.o
+                0x0000507e                HBUZZER_vTurnOn
  .text.HBUZZER_vTurnOff
-                0x000050aa       0x18 ./HAL/Buzzer/Buzzer_Program.o
-                0x000050aa                HBUZZER_vTurnOff
- .text.libgcc   0x000050c2       0x28 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
-                0x000050c2                __udivmodhi4
- .text.libgcc   0x000050ea        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x000050ea        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x000050ea        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .text.libgcc   0x000050ea       0x38 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
-                0x000050ea                __prologue_saves__
- .text.libgcc   0x00005122       0x36 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
-                0x00005122                __epilogue_restores__
-                0x00005158                . = ALIGN (0x2)
+                0x00005096       0x18 ./HAL/Buzzer/Buzzer_Program.o
+                0x00005096                HBUZZER_vTurnOff
+ .text.libgcc   0x000050ae       0x28 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x000050ae                __udivmodhi4
+ .text.libgcc   0x000050d6        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x000050d6        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x000050d6        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x000050d6       0x38 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x000050d6                __prologue_saves__
+ .text.libgcc   0x0000510e       0x36 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x0000510e                __epilogue_restores__
+                0x00005144                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00005158        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x00005158                exit
-                0x00005158                _exit
+ .fini9         0x00005144        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00005144                exit
+                0x00005144                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -416,11 +416,11 @@ LOAD x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00005158        0x4 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x00005144        0x4 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x0000515c                _etext = .
+                0x00005148                _etext = .
 
-.data           0x00800060      0x266 load address 0x0000515c
+.data           0x00800060      0x266 load address 0x00005148
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
@@ -514,8 +514,8 @@ LOAD x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5
                 0x008002c7                LED_Status
  *(COMMON)
                 0x008002c8                PROVIDE (__bss_end, .)
-                0x0000515c                __data_load_start = LOADADDR (.data)
-                0x000053c2                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00005148                __data_load_start = LOADADDR (.data)
+                0x000053ae                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x008002c8        0x0
                 0x008002c8                PROVIDE (__noinit_start, .)
@@ -540,27 +540,27 @@ LOAD x:/tools/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5
 .signature
  *(.signature*)
 
-.stab           0x00000000     0x4b3c
+.stab           0x00000000     0x4af4
  *(.stab)
- .stab          0x00000000     0x192c ./Src/main.o
- .stab          0x0000192c      0x684 ./MCAL/DIO/DIO_Program.o
+ .stab          0x00000000     0x18e4 ./Src/main.o
+ .stab          0x000018e4      0x684 ./MCAL/DIO/DIO_Program.o
                                 0x690 (size before relaxing)
- .stab          0x00001fb0      0x684 ./HAL/StepperMotor/Stepper_Program.o
+ .stab          0x00001f68      0x684 ./HAL/StepperMotor/Stepper_Program.o
                                 0x81c (size before relaxing)
- .stab          0x00002634      0xc90 ./HAL/SSD/SSD_Program.o
+ .stab          0x000025ec      0xc90 ./HAL/SSD/SSD_Program.o
                                 0xe28 (size before relaxing)
- .stab          0x000032c4      0xcb4 ./HAL/LCD/LCD_Program.o
+ .stab          0x0000327c      0xcb4 ./HAL/LCD/LCD_Program.o
                                 0xe4c (size before relaxing)
- .stab          0x00003f78      0x63c ./HAL/Keypad/Keypad_Program.o
+ .stab          0x00003f30      0x63c ./HAL/Keypad/Keypad_Program.o
                                 0x7d4 (size before relaxing)
- .stab          0x000045b4      0x318 ./HAL/DCM/DCM_Program.o
+ .stab          0x0000456c      0x318 ./HAL/DCM/DCM_Program.o
                                 0x4b0 (size before relaxing)
- .stab          0x000048cc      0x270 ./HAL/Buzzer/Buzzer_Program.o
+ .stab          0x00004884      0x270 ./HAL/Buzzer/Buzzer_Program.o
                                 0x27c (size before relaxing)
 
-.stabstr        0x00000000     0x1950
+.stabstr        0x00000000     0x198e
  *(.stabstr)
- .stabstr       0x00000000     0x1950 ./Src/main.o
+ .stabstr       0x00000000     0x198e ./Src/main.o
 
 .stab.excl
  *(.stab.excl)
